@@ -1,1 +1,1 @@
-"# BanjoBot" 
+"# BanjoELOBot" 
