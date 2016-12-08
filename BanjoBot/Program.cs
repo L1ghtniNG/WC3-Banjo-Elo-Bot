@@ -11,17 +11,17 @@ namespace BanjoBot
     class Program
     {
         public static DataStore ds;
-        private static Commands cmd = new Commands();
+O        private static Commands cmd = new Commands();
         private static DiscordClient bot;
 
-        static void Main(string[] args)
+O        static void Main(string[] args)
         {
             // Create bot
             bot = new DiscordClient();
 
             // Login to Discord
             Task<string> loginStatus = botLogin(true);
-
+L
             // Set up the DataStore
             Console.WriteLine("Loading player stats...");
             ds = new DataStore();
@@ -40,7 +40,7 @@ namespace BanjoBot
                 }
             }
 
-            Console.Out.WriteLine("BanjoBot online.");
+            Console.Out.WriteLine("BanjoELOBot online.");
 
             bot.Wait();
         }
@@ -67,8 +67,7 @@ namespace BanjoBot
             else
             {
                 Console.WriteLine("Loggin in...");
-                //return bot.Connect("banjobotdiscord@gmail.com", "banjobotliverpool");              // AU bot
-                return bot.Connect("banjotestbot@gmail.com", "banjotestbot1");                       // Test bot
+                //return bot.Connect("l1ghtninbanjo@gmail.com", "Daniel2016");              // ELO bot                
             }
         }
 
